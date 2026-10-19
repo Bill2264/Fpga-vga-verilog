@@ -1,19 +1,9 @@
----
-layout: home
-title: FPGA VGA Driver Project
-tags: fpga vga verilog
-categories: demo
----
-
+# **FPGA-VGA-VERILOG**
 Hello My name is Billy Lis-Murphy and this is my vga verilog porject
 
-I am adding a test sentence here at 13:24 on 03/12/24.
-
-## **Template VGA Design**
 ### **Project Set-Up**
-Summarise the project set-up and design flow. Include a screenshot of your own set-up, for example see the image of my Project Summary window below. Guideline 1 short paragraph.
-
-<img src="https://raw.githubusercontent.com/melgineer/fpga-vga-verilog/main/docs/assets/images/VGAPrjSum.png">
+The was set up using Vivado. The board being used is the xc7a35tcpg236-1. We were given some template code to put into the project to start with.
+<img src="/docs/assets/images/Screenshot 2026-10-19 170059.png">
 ### **Template Code**
 Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
 ### **Simulation**
@@ -50,4 +40,4 @@ A bullet list can be rendered as follows:
 
 Images can be added by uploading them to the repository in a /docs/assets/images folder, and then rendering using HTML via githubusercontent.com as shown in the example below.
 
-<img src="https://raw.githubusercontent.com/melgineer/fpga-vga-verilog/main/docs/assets/images/VGAPrjSrcs.png">
+<img src="/docs/assets/images/Screenshot 2026-10-19 170241.png">
