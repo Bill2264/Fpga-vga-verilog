@@ -3,7 +3,7 @@ Hello My name is Billy Lis-Murphy and this is my vga verilog porject
 
 ### **Project Set-Up**
 The was set up using Vivado. The board being used is the xc7a35tcpg236-1. We were given some template code to put into the project to start with.
-<img src="https://github.com/Bill2264/Fpga-vga-verilog/blob/main/docs/assets/images/Screenshot%202026-10-19%20170059.png">
+<img src="https://raw.githubusercontent.com/Bill2264/Fpga-vga-verilog/blob/main/docs/assets/images/Screenshot%202026-10-19%20170059.png">
 ### **Template Code**
 Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
 ### **Simulation**
