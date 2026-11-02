@@ -5,9 +5,9 @@ Hello My name is Billy Lis-Murphy and this is my vga verilog porject
 The was set up using Vivado. The board being used is the xc7a35tcpg236-1. We were given some template code to put into the project to start with.
 <img src="https://raw.githubusercontent.com/Bill2264/Fpga-vga-verilog/main/docs/assets/images/Screenshot%202026-10-19%20170059.png">
 ### **Template Code**
-Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
+<img src="https://github.com/Bill2264/Fpga-vga-verilog/main/docs/assets/images/Screenshot%202026-10-19%20170241.png">
 The template code had a constraints file to set up the VGA output and reset switch on the board, Test bench file to ensure the code can run on the board without failing, and 4 design source files.
-The First design source file, VGATop, acts as a manager connecting the other 3 design source files.
+The First design source file, VGATop, acts as a manager connecting the other 3 design source files. The second file is a clock that runs at 100 MHz. The third file, vga_sync, defines the screen dimensions. The final file, colour_strips, defines what is drawn onto the screen.
 ### **Simulation**
 Explain the simulation process. Reference any important details, include a well-selected screenshot of the simulation. Guideline: 1/2 short paragraphs.
 ### **Synthesis**
@@ -42,4 +42,3 @@ A bullet list can be rendered as follows:
 
 Images can be added by uploading them to the repository in a /docs/assets/images folder, and then rendering using HTML via githubusercontent.com as shown in the example below.
 
-<img src="https://github.com/Bill2264/Fpga-vga-verilog/main/docs/assets/images/Screenshot%202026-10-19%20170241.png">
