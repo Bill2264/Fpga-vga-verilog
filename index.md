@@ -40,13 +40,13 @@ Flag of Ireland
 <img src="https://raw.githubusercontent.com/Bill2264/Fpga-vga-verilog/main/docs/assets/images/IMG_20261019_155055.jpg">
 Flag of Poland
 <img src="https://raw.githubusercontent.com/Bill2264/Fpga-vga-verilog/main/docs/assets/images/IMG_20261019_160957.jpg">
-### **Code Adaptation for the face**
-This code adaptation was more complex than the flags, first was learning how to draw the circles on the screen. I was given a code template that described how to draw a circle. The circle is defined by describing the center point and measuring the distance from that point. The signed dy and dx are offset from the current column and row., this defines the center of the circle. Then the length formula is used to get the square of distance. the if statement in the always loop defines the size of the circle, in this case eye1 is in place of distance_sq seen in the first picture.
+### **Code adaptation for the Face**
+This code adaptation was more complex than the flags, first was learning how to draw the circles on the screen. I was given a code template that described how to draw a circle visible from lines 19 to 24. The circle is defined by describing the center point and measuring the distance from that point. The signed dy and dx are offset from the current column and row., this defines the center of the circle. Then the length formula is used to get the square of distance. the if statement in the always loop defines the size of the circle, in this case eye1 is in place of distance_sq seen in the first picture.
 <img src="https://raw.githubusercontent.com/Bill2264/Fpga-vga-verilog/main/docs/assets/images/IMG_20261116_155548.jpg">
 <img src="https://raw.githubusercontent.com/Bill2264/Fpga-vga-verilog/main/docs/assets/images/IMG_20261116_160303.jpg">
 I adjusted the code to make it form this eye.
 <img src="https://raw.githubusercontent.com/Bill2264/Fpga-vga-verilog/main/docs/assets/images/IMG_20261116_160248.jpg">
-I then made a second eye and adjusted their positions to be in location for the face I did this be changing the row and column offset that are used in the code for dx and dy, for  eye1 and eye2.
+I then made a second eye and adjusted their positions to be in location for the face I did this be changing the row and column offset that are used in the code for dx and dy, for  eye1 and eye2, from lines 19 to 30.
 <img src="https://raw.githubusercontent.com/Bill2264/Fpga-vga-verilog/main/docs/assets/images/IMG_20261116_160714.jpg">
 from line 93 to 100, I defined the mouth using nested if statements, the first one to define the width using columns, and the second using rows to define the height of the mouth using rows
 <img src="https://raw.githubusercontent.com/Bill2264/Fpga-vga-verilog/main/docs/assets/images/IMG_20261116_164346.jpg">
