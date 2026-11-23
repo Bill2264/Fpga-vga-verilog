@@ -15,7 +15,7 @@ The First design source file, VGATop, acts as a manager connecting the other 3 d
 This simulation demonstrates the changing of the red_next, green_next, blue_next.
 ### **Synthesis**
 <img src="https://raw.githubusercontent.com/Bill2264/Fpga-vga-verilog/main/docs/assets/images/Screenshot 2026-11-23 154248.png">
-this image shows the the implementation design that will be on the board, the parts in blue highlight the registers that hold the data on the board, while highlighted in orange, are the output pins and output buffers, that send the data to the screen to be displayed
+this image shows the the implementation design that will be on the board, the parts in blue highlight the registers that hold the data on the board and logic gates that are being used, while highlighted in orange, are the output pins and output buffers, that send the data to the screen to be displayed
 ### **Demonstration**
 <img src="https://raw.githubusercontent.com/Bill2264/Fpga-vga-verilog/main/docs/assets/images/IMG_20261012_174145.jpg">
 Here we can see the columns of different colours
@@ -33,25 +33,30 @@ For Adapting the code for the Polish flag had a slight bit more bit more to do, 
 ### **Simulation**
 same simulation test as before
 ### **Synthesis**
-Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.
+<img src="https://raw.githubusercontent.com/Bill2264/Fpga-vga-verilog/main/docs/assets/images/Screenshot 2026-11-23 155327.png">
+Here we can see the implementation design for the flag. Comparing it to the implementation design from the template code, we see less registers and logic gates being used, this makes sense as there are less if statements in use.
 ### **Demonstration**
 Flag of Ireland
 <img src="https://raw.githubusercontent.com/Bill2264/Fpga-vga-verilog/main/docs/assets/images/IMG_20261019_155055.jpg">
 Flag of Poland
 <img src="https://raw.githubusercontent.com/Bill2264/Fpga-vga-verilog/main/docs/assets/images/IMG_20261019_160957.jpg">
 ### **Code Adaptation for the face**
-This code adaptation was more complex than the flags, first was learning how to draw the circles on the screen. I was given a code template that described how to draw a circle.
+This code adaptation was more complex than the flags, first was learning how to draw the circles on the screen. I was given a code template that described how to draw a circle. The circle is defined by describing the center point and measuring the distance from that point. The signed dy and dx are offset from the current column and row., this defines the center of the circle. Then the length formula is used to get the square of distance. the if statement in the always loop defines the size of the circle, in this case eye1 is in place of distance_sq seen in the first picture.
 <img src="https://raw.githubusercontent.com/Bill2264/Fpga-vga-verilog/main/docs/assets/images/IMG_20261116_155548.jpg">
 <img src="https://raw.githubusercontent.com/Bill2264/Fpga-vga-verilog/main/docs/assets/images/IMG_20261116_160303.jpg">
 I adjusted the code to make it form this eye.
 <img src="https://raw.githubusercontent.com/Bill2264/Fpga-vga-verilog/main/docs/assets/images/IMG_20261116_160248.jpg">
 I then made a second eye and adjusted their positions to be in location for the face I did this be changing the row and column offset that are used in the code for dx and dy, for  eye1 and eye2.
 <img src="https://raw.githubusercontent.com/Bill2264/Fpga-vga-verilog/main/docs/assets/images/IMG_20261116_160714.jpg">
-I defined the mouth using nested if statements, the first one to define the width using columns, and the second using rows to define the height of the mouth using rows
+from line 93 to 100, I defined the mouth using nested if statements, the first one to define the width using columns, and the second using rows to define the height of the mouth using rows
 <img src="https://raw.githubusercontent.com/Bill2264/Fpga-vga-verilog/main/docs/assets/images/IMG_20261116_164346.jpg">
+The nose is is defined using from lines 96 to 102. It uses nested if statements but this time, the row is the first if and column is the second, and row affects the column. The first if statement functions the same as for the mouth but the second if statement works differently. The if statement describes a line, from one end to the other, where the length is dependent on the row, so the lower on the screen the row is, is longer the line it draws, converging at row 240.
+<img src="https://raw.githubusercontent.com/Bill2264/Fpga-vga-verilog/main/docs/assets/images/Screenshot 2026-11-23 163542.png">
 ### **Simulation**
 same simulation test as before
 ### **Synthesis**
-Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.
+<img src="https://raw.githubusercontent.com/Bill2264/Fpga-vga-verilog/main/docs/assets/images/Screenshot 2026-11-23 163500.png">
+Here we see the implementation design for the face. As we can see there are more registers and logic gates in use, which is understandable given all the registers used for the circle code and if statements to define the moutn and nose.
 ### **Demonstration**
-If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.
+<img src="https://raw.githubusercontent.com/Bill2264/Fpga-vga-verilog/main/docs/assets/images/IMG_20261123_163346.jpg">
+This is the final face.
